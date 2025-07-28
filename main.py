@@ -12,7 +12,7 @@ class Patient(BaseModel):
 def insert_patient_data(patient:Patient):
     print(patient.name)
     print(patient.age)
-    print(patient.married)
+    print(patient.allergies)
 
 def update_patient_data(patient:Patient):
     print(patient.name)
@@ -23,7 +23,7 @@ patient_info = {
                 "age":12,
                 "weight":49.9,
                 "married":"no",
-                "allergies" : ['pollen','dust'],
+                # "allergies" : ['pollen','dust'],
                 'contact_details':{'email':'abc@gmail.com',
                                    'phone':'3456793266'}
                 }
